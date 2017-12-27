@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+      /*第一部分*/
+      body {
+        background: #fcfcfc;
+      }
+      #main {
+          margin: 0 auto;
+          width: 981px;
+      }   
+    .left img {
+          float: left;
+          margin-top: 5px;
+     }
+     .c {
+          margin-right: -7px;
+          height: 21px;
+          padding-bottom: 2px;
+          border: 1px solid #0998e2;
+          border-radius: 10px 0px 0px 10px;
+     }
+     .right .cl {
+          width: 37px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 11px;
+          background: #055d9d;
+          color: #ffffff;
+          border-width: 0px;
+          border-radius: 0px 12px 12px 0px;
+    }
+     .right {
+          margin-top: 38px;
+          float: right;
+     }
+     .right a {
+          text-decoration: none;
+          color: #06a5ec;
+          font-size: 10px;
+     }
+     .right li {
+     	float: left;
+          /*padding-bottom: 10px;*/
+      }
+      /*pic和导航栏部分*/
+     .nav-frist ul {
+          background:#0b8eda;
+          border-radius: 16px;   
+      }
+     .nav-frist ul a { 
+     	line-height: 4px;
+     	display: inline-block;
+     	width: 60px;
+     	position: relative;
+          font-size:15px;
+          color: #ffffff;
+          margin: 14px;
+          text-decoration: none;
+      }
+      .nav-frist a span {
+      		position: absolute;
+      		bottom: -19px;
+		left: 21px;
+		display: none;
+      }
+      .nav-frist a:hover span {
+      	display: block;
+      }
+      .triangle {
+		width: 0;
+		height: 0;
+		border-width: 5px;
+		border-style: solid;
+	}
+      .triangle-top {
+  		border-color: transparent transparent #fff transparent;
+	}
+     .nav-frist {  
+          width: 960px;
+          height: 34px;         
+          border-radius: 20px;   
+          padding: 2px;
+          border: 1px solid #4ac4ff;
+          text-align: center; 
+	 background: -webkit-linear-gradient(#22aaeb,#1079ca);
+	 background: -o-linear-gradient(#22aaeb,#1079ca);
+	 background: -moz-linear-gradient(#22aaeb,#1079ca);
+	 background: linear-gradient(#22aaeb,#1079ca);
+	 }
+     /*中间内容部分*/
+     section h2,span {
+          margin-top: 20px;
+          float: left;
+          display: inline-block;
+          font-size: 22px;
+          color: #06a5ec;
+     }
+     section span {
+          font-weight: bold;
+          padding: 5px;
+          float: left;
+          font-size: 14px;
+          color: #a8d412;
+     }
+     .more {
+          margin-top: 24px;
+          float: right;
+     }
+     /*中间部分左边的图*/
+   
+     .center-left ul {
+          margin-bottom: 4px;
+          width: 362px;
+          height: 57px;
+     }
+     section ul img {
+          float: left;
+     }
+    article header {
+          height: 80px;
+     }  
+     .center-left {
+          width: 374px;
+          height: 278px;
+     }
+     .center-two {
+          width: 300px;
+          height: 278px;
+     }
+     .center-three {
+          width: 298px;
+          height: 278px;
+      }
+     .center-four {
+          width: 374px;
+          height: 206px;
+     }
+    .center-five {
+          width: 600px;
+          height: 206px;
+    }
+     .center-left,.center-one,.center-two,.center-three,.center-four,.center-five{
+          float: left;
+     }
+     .center-two time {
+          font-size: 12px;
+     }
+     .center-two .you {
+          padding: 4px;
+          margin-left: 10px;
+      }
+      .center-two p a {
+          color: #06a5ec;
+          font-size: 12px;
+          line-height: 25px;
+      }
+      section .zuo {
+          float:left;
+      }
+     .center-three .zuo {
+          border: 10px solid #ffffff;
+          border-radius: 6px;
+          padding-left: 21px;
+      }
+     .center-three p {
+          line-height: 25px;
+          font-size: 13px;
+          margin-left: 30px;
+     }
+     .center-three strong {
+          color: #06a5ec;
+     }
+     .center-four h3 {
+          color: #06a5ec;
+          font-size: 15px;
+     }
+     .center-four .zuo {
+          padding-right: 16px;
+     }
+     .center-five li {
+          float: left;
+          padding-left: 13px;
+     }
+     .center-five p {
+          text-align: center;
+          color: #06a5ec;
+          font-size: 13px;
+     }
+     /*下面导航栏*/
+     .bottom {
+          margin-bottom: 15px;
+          width: 972px;
+          height: 40px;
+          border-radius: 10px;
+          border: 1px solid #e8e9e8;
+          background: #fcfcfc;
+     }
+     .bottom .bottom-nav {
+          float: right;
+          line-height: 40px;
+     }
+      .bottom .bottom-nav a {
+          text-decoration: none;
+          color: #06a5ec;
+          font-weight: bold;
+      }
+     .bottom strong {
+          margin-left: 20px;
+          line-height: 40px;
+     }
+     .bottom-nav li {
+          margin-right: 35px;
+     }
+     pre a {
+          color: #06a5ec;
+     }
+     footer .last-pic {
+          width: 981px;
+          height: 80px;
+         /*  display: table-cell;*/
+          text-align: center;
+     }
+     .last-logo {
+          width: 981px;
+          margin: 0 auto;
+          text-align: center;
+     }
+</style>
+<body>
+    <div id="main">
+          <div class="header clearfix">
+              <div class="left">
+                  <img src="./images/1.png" alt="">
+              </div>
+              <div class="right">
+                        <li>
+                                <a href="">设为首页&nbsp|&nbsp </a>
+                                <a href="">加入收藏&nbsp|&nbsp</a>
+                                <a href="">站内搜索</a>
+                        </li>
+                   <input type="text" class="c">
+                   <input type="button" value="搜索" class="cl">
+              </div>
+          </div>
+          <nav class="nav-frist clearfix">
+                    <ul>
+                        <li>
+                            <a href="">首页<span class="triangle triangle-top"></span></a>
+                            <a href="">学校概况<span class="triangle triangle-top"></span></a>
+                            <a href="">新闻公告<span class="triangle triangle-top"></span></a>
+                            <a href="">课程设置<span class="triangle triangle-top"></span></a>
+                            <a href="">师资力量<span class="triangle triangle-top"></span></a>
+                            <a href="">学子风采<span class="triangle triangle-top"></span></a>
+                            <a href="">资料中心<span class="triangle triangle-top"></span></a>
+                            <a href="">招贤纳士<span class="triangle triangle-top"></span></a>
+                            <a href="">联系我们<span class="triangle triangle-top"></span></a>
+                            <a href="">留言咨询<span class="triangle triangle-top"></span></a>
+                        </li>
+                    </ul>
+          </nav> 
+          <div class="pic">
+              <img src="./images/2.png" alt="">
+          </div>
+          <article class="clearfix">
+              <section class="center-left clearfix">
+                   <header>
+                        <h2>COURSES</h2><span>课程设置</span>
+                            <a href=""><img src="./images/13.png" alt="" class="more"></a>
+                   </header>
+                   <ul class="">
+                       <li>
+                             <img src="./images/10.png" alt="" class="pic-one">
+                             <a href="">EEC、</a>
+                             <a href="">新目标、</a>
+                             <a href="">牛津英语、</a>
+                             <a href="">奥数、</a>
+                             <a href="">作文、</a>
+                             <a href="">数学.</a>
+                       </li>
+                   </ul>
+                   <ul class="">
+                       <li>
+                             <img src="./images/11.png" alt="" class="pic-two">
+                             <a href="">EEC、</a>
+                             <a href="">新课标、</a>
+                             <a href="">牛津、</a>
+                             <a href="">新概念英语、</a>
+                             <a href="">物理、</a>
+                             <a href="">化学、</a>
+                             <a href="">数学.</a>
+                       </li>
+                   </ul>
+                    <ul class="">
+                       <li>
+                             <img src="./images/12.png" alt="" class="pic-three">
+                             <a href="">语文、</a>
+                             <a href="">英语、</a>
+                             <a href="">数学、</a>
+                             <a href="">物理、</a>
+                             <a href="">化学、</a>
+                             <a href="">政治、</a>
+                             <a href="">历史各科.</a>
+                       </li>
+                   </ul>
+              </section>
+              <section class="center-two">
+                   <header>
+                        <h2>NEWS</h2><span>新闻公告</span>
+                            <a href=""><img src="./images/13.png" alt="" class="more"></a>
+                   </header>
+                   <ul>
+                            <li>
+                                <img src="./images/14.png" alt="" class="you">
+                                <time>2009-09-01</time>
+                                <p>
+                                     <a href="">
+                                          旭东外语文化学校新学期招生工作拉开序幕
+                                     </a>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/14.png" alt="" class="you">
+                                <time>2009-08-24</time>
+                                <p>
+                                     <a href=""> 
+                                          旭东外语文化学校各年级暑期班顺利结束
+                                     </a>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/14.png" alt="" class="you">
+                                <time>2009-08-24</time>
+                                <p>
+                                     <a href="">
+                                         初中新目标、EEC、牛津英语暑期班火热招生中
+                                     </a>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/14.png" alt="" class="you">
+                                <time>2009-08-24</time>
+                                <p>
+                                     <a href="">
+                                          三中老师高三全科暑期班报名工作正式开始
+                                     </a>
+                                </p>
+                            </li>
+                   </ul>                
+              </section>
+              <section class="center-three ">
+                   <header>
+                        <h2>ABOUT&nbspUS</h2><span>学校简介</span>
+                          <a href=""><img src="./images/13.png" alt="" class="more"></a>
+                   </header>
+                        <img src="./images/4.png" alt="" class="zuo">
+                   <p>
+                        哈尔滨市香坊区旭东外语文化学校成立于2001年,
+                        本校是香坊区民办非学历学校联盟会单位,学校现
+                        专职有28人,同时长期外聘哈三中、哈六中等省重
+                        点名师组织教学工作<a href=""><strong>【详细】</strong></a>
+                   </p>
+              </section>
+              <section class="center-four ">
+                   <header>
+                          <h2>STUDENTS</h2><span>优秀学员</span>
+                            <a href=""><img src="./images/13.png" alt="" class="more"></a>
+                   </header>
+                          <img src="./images/21.png" alt="" class="zuo clearfix">
+                        <h3>李海洋</h3>
+                        <p>
+                              哈工大附校五年级学生,
+                              曾获得黑龙江省奥林匹克数学竞赛一等奖、
+                              少儿书法大赛优秀奖、校三好学生等称号.
+                              他平时喜欢轮滑...
+                        </p>
+              </section>
+              <section class="center-five">
+                    <header>
+                        <h2>TEACHERS</h2><span>师资力量</span>
+                          <a href=""><img src="./images/13.png" alt="" class="more"></a>
+                    </header>
+                     <ul>
+                       <li>
+                            <a href="">
+                                <img src="./images/22.png" alt="" class="right-one">
+                            </a>
+                       </li>
+                       <li>
+                            <a href="">
+                                <img src="./images/15.png" alt="" class="right-one">
+                                <p>李老师</p>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="">
+                                <img src="./images/15.png" alt="" class="right-one">
+                                <p>李老师</p>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="">.
+                                <img src="./images/15.png" alt="" class="right-one">
+                                <p>李老师</p>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="">
+                                <img src="./images/15.png" alt="" class="right-one">
+                                <p>李老师</p>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="">
+                                <img src="./images/15.png" alt="" class="right-one">
+                                <p>李老师</p>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="">
+                                 <img src="./images/23.png" alt="" class="right-one">
+                            </a>
+                       </li>
+                     </ul>
+              </section>
+          </article>
+          <div class="bottom">
+              <strong>哈尔滨市香坊区旭东外语文化学校&nbsp版权所有</strong>
+              <ul class="bottom-nav">
+                   <li>
+                       <a href="">学校简介&nbsp|&nbsp</a>
+                       <a href="">招贤纳士&nbsp|&nbsp</a>
+                       <a href="">联系我们&nbsp|&nbsp</a>
+                       <a href="">留言咨询</a>
+                   </li>
+              </ul>
+          </div>
+          <footer>
+              <pre class="last-logo">
+                Copyright @  Xudong Foreign Language & Culture School
+ 学校地址:哈尔滨市香坊区旭东街88号( 75路公交成套设备所站下即到 )| 邮编:150001
+电话 : 0451-82890202 82890303 | 传真 : 0451-82890202 |   邮箱 : ixudong@126.com 
+       网址 : www.ixudong.com | 技术支持 : <a href="">朱炳全Qideas.zhu </a> | 站长统计         
+              </pre>
+              <div class="last-pic">
+              <img src="./images/16.png" alt="" class="">
+              </div>
+          </footer>
+    </div>     
+</body>
+</html>
